@@ -34,20 +34,22 @@ class PetsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PetCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PetCell", for: indexPath) as? PetTableViewCell
         
         var eachPet = pets[indexPath.row] as Pet
 //        cell.textLabel?.text = eachPet.name
 //        cell.detailTextLabel?.text = eachPet.title
         
-        if let labelName = cell.viewWithTag(10) as? UILabel {
-            labelName.text = eachPet.name
-        }
-        if let labelTitle = cell.viewWithTag(11) as? UILabel {
-            labelTitle.text = eachPet.title
-        }
-
-        return cell
+//        if let labelName = cell.viewWithTag(10) as? UILabel {
+//            labelName.text = eachPet.name
+//        }
+//        if let labelTitle = cell.viewWithTag(11) as? UILabel {
+//            labelTitle.text = eachPet.title
+//        }
+        
+        cell?.labelName?.text = eachPet.name ?? ""
+        cell?.labelTitle?.text = eachPet.title ?? ""
+        return cell!
     }
 
     /*

@@ -10,6 +10,7 @@
 		CC6AE71728BDC1C10015F9CE /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6AE71628BDC1C10015F9CE /* Pet.swift */; };
 		CC6AE71928BDC2730015F9CE /* MockupPetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6AE71828BDC2730015F9CE /* MockupPetData.swift */; };
 		CC6AE71B28BDC3760015F9CE /* PetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6AE71A28BDC3760015F9CE /* PetsTableViewController.swift */; };
+		CC6AE71D28BDCB540015F9CE /* PetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6AE71C28BDCB540015F9CE /* PetTableViewCell.swift */; };
 		CC98A76428BDB6BE00C70077 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC98A76328BDB6BE00C70077 /* AppDelegate.swift */; };
 		CC98A76D28BDB6BF00C70077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC98A76C28BDB6BF00C70077 /* Assets.xcassets */; };
 		CC98A77A28BDB71700C70077 /* StoryboardLession1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC98A77928BDB71700C70077 /* StoryboardLession1.storyboard */; };
@@ -20,6 +21,7 @@
 		CC6AE71628BDC1C10015F9CE /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		CC6AE71828BDC2730015F9CE /* MockupPetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockupPetData.swift; sourceTree = "<group>"; };
 		CC6AE71A28BDC3760015F9CE /* PetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsTableViewController.swift; sourceTree = "<group>"; };
+		CC6AE71C28BDCB540015F9CE /* PetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTableViewCell.swift; sourceTree = "<group>"; };
 		CC98A76028BDB6BE00C70077 /* ios_beginning_tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_beginning_tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC98A76328BDB6BE00C70077 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC98A76C28BDB6BF00C70077 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				CC6AE71528BDC1B30015F9CE /* Model */,
 				CC98A77928BDB71700C70077 /* StoryboardLession1.storyboard */,
 				CC6AE71A28BDC3760015F9CE /* PetsTableViewController.swift */,
+				CC6AE71C28BDCB540015F9CE /* PetTableViewCell.swift */,
 			);
 			path = Lession_1;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				CC98A76428BDB6BE00C70077 /* AppDelegate.swift in Sources */,
 				CC6AE71928BDC2730015F9CE /* MockupPetData.swift in Sources */,
 				CC6AE71728BDC1C10015F9CE /* Pet.swift in Sources */,
+				CC6AE71D28BDCB540015F9CE /* PetTableViewCell.swift in Sources */,
 				CC6AE71B28BDC3760015F9CE /* PetsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
