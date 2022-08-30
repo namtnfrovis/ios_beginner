@@ -37,9 +37,12 @@ class PetsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PetCell", for: indexPath) as? PetTableViewCell
         
         var eachPet = pets[indexPath.row] as Pet
+
+//        Cách 1: Gán giá trị trực tiếp vào Table View Cell với stype = Subtitle
 //        cell.textLabel?.text = eachPet.name
 //        cell.detailTextLabel?.text = eachPet.title
         
+//    Cách2: Sử dụng View Tag định vị cho từng cell. Tag có nhiệm vụ giống như 1 id để phân biệt các thành phần.
 //        if let labelName = cell.viewWithTag(10) as? UILabel {
 //            labelName.text = eachPet.name
 //        }
@@ -47,8 +50,13 @@ class PetsTableViewController: UITableViewController {
 //            labelTitle.text = eachPet.title
 //        }
         
-        cell?.labelName?.text = eachPet.name ?? ""
-        cell?.labelTitle?.text = eachPet.title ?? ""
+//        Cách 3: Tạo 1 class PetTableViewCell và truyền 2 thuộc tính trong UI vào khai báo
+//        cell?.labelName?.text = eachPet.name ?? ""
+//        cell?.labelTitle?.text = eachPet.title ?? ""
+        
+//        Cách 4: tạo setter(didSet) trong PetTableViewCell
+        
+        cell?.pet = eachPet
         return cell!
     }
 
