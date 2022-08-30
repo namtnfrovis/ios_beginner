@@ -15,6 +15,7 @@
 		CC98A76D28BDB6BF00C70077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC98A76C28BDB6BF00C70077 /* Assets.xcassets */; };
 		CC98A77A28BDB71700C70077 /* StoryboardLession1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC98A77928BDB71700C70077 /* StoryboardLession1.storyboard */; };
 		CC98A78328BDBCCB00C70077 /* StoryboardLession2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC98A78228BDBCCB00C70077 /* StoryboardLession2.storyboard */; };
+		CCB9B3E328BDF04D0091A579 /* AddPetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB9B3E228BDF04D0091A579 /* AddPetTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CC98A77128BDB6BF00C70077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC98A77928BDB71700C70077 /* StoryboardLession1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardLession1.storyboard; sourceTree = "<group>"; };
 		CC98A78228BDBCCB00C70077 /* StoryboardLession2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardLession2.storyboard; sourceTree = "<group>"; };
+		CCB9B3E228BDF04D0091A579 /* AddPetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +83,9 @@
 		CC98A77728BDB6EA00C70077 /* Lession_1 */ = {
 			isa = PBXGroup;
 			children = (
+				CCB9B3E128BDEFEE0091A579 /* Controller */,
 				CC6AE71528BDC1B30015F9CE /* Model */,
 				CC98A77928BDB71700C70077 /* StoryboardLession1.storyboard */,
-				CC6AE71A28BDC3760015F9CE /* PetsTableViewController.swift */,
 				CC6AE71C28BDCB540015F9CE /* PetTableViewCell.swift */,
 			);
 			path = Lession_1;
@@ -95,6 +97,15 @@
 				CC98A78228BDBCCB00C70077 /* StoryboardLession2.storyboard */,
 			);
 			path = Lession_2;
+			sourceTree = "<group>";
+		};
+		CCB9B3E128BDEFEE0091A579 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC6AE71A28BDC3760015F9CE /* PetsTableViewController.swift */,
+				CCB9B3E228BDF04D0091A579 /* AddPetTableViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC98A76428BDB6BE00C70077 /* AppDelegate.swift in Sources */,
+				CCB9B3E328BDF04D0091A579 /* AddPetTableViewController.swift in Sources */,
 				CC6AE71928BDC2730015F9CE /* MockupPetData.swift in Sources */,
 				CC6AE71728BDC1C10015F9CE /* Pet.swift in Sources */,
 				CC6AE71D28BDCB540015F9CE /* PetTableViewCell.swift in Sources */,

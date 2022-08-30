@@ -97,11 +97,49 @@
                             <outlet property="delegate" destination="E7R-Hl-OWy" id="VPZ-eS-ens"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="jxn-ct-3fQ"/>
+                    <navigationItem key="navigationItem" id="jxn-ct-3fQ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="BY1-Kn-RBy">
+                            <connections>
+                                <segue destination="YiM-zD-t3M" kind="show" id="DLQ-SY-sxe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rPr-Tm-JPg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="908.69565217391312" y="-734.59821428571422"/>
+        </scene>
+        <!--Add Pet-->
+        <scene sceneID="vq7-Fg-7xE">
+            <objects>
+                <tableViewController id="YiM-zD-t3M" customClass="AddPetTableViewController" customModule="ios_beginning_tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="fS5-m6-utL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bdL-Mr-Wkf">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bdL-Mr-Wkf" id="LSW-re-rtt">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="YiM-zD-t3M" id="oKm-WG-NBF"/>
+                            <outlet property="delegate" destination="YiM-zD-t3M" id="29Y-LN-ctp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add Pet" id="OrK-Gv-loq">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="s5z-N8-xrU"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="5wB-aF-gWY"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uuH-1G-xd1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1868" y="-735"/>
         </scene>
         <!--Pet-->
         <scene sceneID="WTj-Uj-VgP">
